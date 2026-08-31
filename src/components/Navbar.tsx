@@ -3,7 +3,7 @@ import {Link, NavLink} from "react-router-dom";
 import {Menu, X} from "lucide-react";
 import {track} from "@/lib/analytics";
 import BookNowModal from "@/components/BookNowModal";
-
+import logo from "../asessts/logo_2.jpeg";
 const links: [string, string][] = [
     ["/", "Home"],
     ["/experiences", "Experiences"],
@@ -22,14 +22,7 @@ export default function Navbar() {
         <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-black/55 backdrop-blur-xl">
             <div className="mx-auto flex h-20 max-w-[1400px] items-center justify-between px-5 lg:px-10">
                 <Link to="/" onClick={() => setOpen(false)} className="group flex items-center gap-3">
-                    <span className="grid h-9 w-9 place-items-center border border-[#c8a870] text-[#c8a870] transition group-hover:bg-[#c8a870] group-hover:text-black">
-                        <span className="display text-lg">E</span>
-                    </span>
-                    <span className="text-xs font-semibold tracking-[.25em]">
-                        ELEVATE
-                        <br />
-                        <span className="text-[9px] text-[#c8a870]">BRADFORD</span>
-                    </span>
+                    <img src={logo} alt="logo" className="w-12" />
                 </Link>
 
                 <nav className="hidden items-center gap-7 lg:flex" aria-label="Main navigation">
