@@ -136,7 +136,7 @@ export default function Home() {
                 <EventsPreview events={featuredEvents} />
 
                 {/* Discover Elevate */}
-                <section className="bg-[#111110] px-5 py-24 lg:px-10 lg:py-32">
+                {/* <section className="bg-[#111110] px-5 py-24 lg:px-10 lg:py-32">
                     <div className="mx-auto max-w-[1400px]">
                         <SectionTitle
                             eyebrow="Find your frequency"
@@ -175,7 +175,7 @@ export default function Home() {
                             />
                         </div>
                     </div>
-                </section>
+                </section> */}
 
                 {/* Main Club feature */}
                 {/* <section className="relative overflow-hidden px-5 py-24 lg:px-10 lg:py-36">
