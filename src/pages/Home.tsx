@@ -174,7 +174,7 @@ export default function Home() {
                 </section>
 
                 {/* Main Club feature */}
-                <section className="relative overflow-hidden px-5 py-24 lg:px-10 lg:py-36">
+                {/* <section className="relative overflow-hidden px-5 py-24 lg:px-10 lg:py-36">
                     <img
                         src={images.stage}
                         alt="Live performance at Elevate"
@@ -201,7 +201,7 @@ export default function Home() {
                             </Button>
                         </div>
                     </div>
-                </section>
+                </section> */}
 
                 {/* Events preview */}
                 <EventsPreview events={featuredEvents} />
