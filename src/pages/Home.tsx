@@ -80,9 +80,9 @@ export default function Home() {
                                 <Button to="/experiences" variant="primary" eventName="book_now_click">
                                     Book your experience
                                 </Button>
-                                <Button to="/waitlist" variant="secondary" eventName="waitlist_start">
+                                {/* <Button to="/waitlist" variant="secondary" eventName="waitlist_start">
                                     Join VIP waitlist
-                                </Button>
+                                </Button> */}
                             </div>
                         </div>
                     </div>
