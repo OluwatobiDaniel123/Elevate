@@ -23,7 +23,7 @@ export default function Navbar() {
         <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-black/55 backdrop-blur-xl">
             <div className="mx-auto flex h-20 max-w-[1400px] items-center justify-between px-5 lg:px-10">
                 <Link to="/" onClick={() => setOpen(false)} className="group flex items-center gap-3">
-                    <img src={logo} alt="logo" className="w-16" />
+                    <img src={logo} alt="logo" className="w-28" />
                 </Link>
 
                 <nav className="hidden items-center gap-7 lg:flex" aria-label="Main navigation">
