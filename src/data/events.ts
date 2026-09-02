@@ -238,9 +238,18 @@ export function getRelatedEvents(slug: string, count = 3): ElevateEvent[] {
     .slice(0, count);
 }
 
+// export function getFeaturedEvents(count = 3): ElevateEvent[] {
+//     const featured = events.filter((event) => event.featured && event.status !== "past");
+//     return (featured.length > 0 ? featured : events).slice(0, count);
+// }
+
 export function getFeaturedEvents(count = 3): ElevateEvent[] {
-    const featured = events.filter((event) => event.featured && event.status !== "past");
-    return (featured.length > 0 ? featured : events).slice(0, count);
+    const featuredDays = ["elevate-monday", "elevate-tuesday", "elevate-wednesday"];
+
+    return featuredDays
+    .map((slug) => events.find((event) => event.slug === slug))
+    .filter((event): event is ElevateEvent => !!event)
+    .slice(0, count);
 }
 
 export function getUpcomingEvents(): ElevateEvent[] {
