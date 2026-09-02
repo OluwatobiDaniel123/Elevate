@@ -6,11 +6,11 @@ import BookNowModal from "@/components/BookNowModal";
 import logo from "../asessts/logo_2.jpeg";
 const links: [string, string][] = [
     ["/", "Home"],
-    ["/experiences", "Experiences"],
+    // ["/experiences", "Experiences"],
     ["/events", "Events"],
     ["/studios", "Studios"],
     ["/private-events", "Private Events"],
-    ["/about", "About"],
+    // ["/about", "About"],
     ["/contact", "Contact"],
 ];
 
@@ -85,13 +85,13 @@ export default function Navbar() {
                                 {label}
                             </NavLink>
                         ))}
-                        <Link
+                        {/* <Link
                             onClick={() => setOpen(false)}
                             to="/waitlist"
                             className="text-sm font-semibold uppercase tracking-[.18em] text-[#d8b982]"
                         >
                             VIP Waitlist
-                        </Link>
+                        </Link> */}
                         <button
                             onClick={() => {
                                 setOpen(false);

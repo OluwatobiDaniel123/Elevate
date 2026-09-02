@@ -241,7 +241,7 @@ export default function Home() {
                 <CommunityStats />
 
                 {/* Testimonials */}
-                <Testimonials />
+                {/* <Testimonials /> */}
 
                 {/* Community CTA */}
                 <section className="px-5 py-24 lg:px-10 lg:py-36">

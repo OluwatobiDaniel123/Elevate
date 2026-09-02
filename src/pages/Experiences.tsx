@@ -23,7 +23,7 @@ export default function Experiences() {
                 description="The main club at Elevate Bradford — DJs, live sound, premium tables, food, drinks and a community that knows how to move."
                 path="/experiences"
             />
-            <PageHero
+            {/* <PageHero
                 eyebrow="Main club"
                 title={
                     <>
@@ -35,9 +35,9 @@ export default function Experiences() {
                 copy="The lights go down, the room opens up and Bradford gets a little louder. DJs, live sound, premium tables, food, drinks and a community that knows how to move."
                 image={images.hero}
                 alt="The main club at Elevate Bradford"
-            />
+            /> */}
 
-            <section className="px-5 py-24 lg:px-10 lg:py-32">
+            {/* <section className="px-5 py-24 lg:px-10 lg:py-32">
                 <div className="mx-auto grid max-w-[1400px] gap-12 md:grid-cols-2">
                     <div>
                         <SectionTitle eyebrow="The experience" title="Come as you are. Leave with a story." />
@@ -69,9 +69,9 @@ export default function Experiences() {
                         />
                     </div>
                 </div>
-            </section>
+            </section> */}
 
-            <section className="bg-[#111110] px-5 py-24 lg:px-10">
+            {/* <section className="bg-[#111110] px-5 py-24 lg:px-10">
                 <div className="mx-auto grid max-w-[1400px] gap-5 md:grid-cols-3">
                     <div className="border-t border-[#c8a870] pt-5">
                         <Music2 className="mb-8 text-[#c8a870]" />
@@ -95,7 +95,7 @@ export default function Experiences() {
                         </p>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             <EventsPreview events={featuredEvents} />
         </>

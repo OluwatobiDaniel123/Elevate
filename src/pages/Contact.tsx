@@ -50,7 +50,7 @@ export default function Contact() {
                                 Book VIP
                             </Button>
                             <Button to="/private-events" variant="secondary" eventName="corporate_enquiry_start">
-                                Plan a private event
+                                book your event
                             </Button>
                             <Button to="/studios" variant="secondary" eventName="cta_click">
                                 Book a studio
