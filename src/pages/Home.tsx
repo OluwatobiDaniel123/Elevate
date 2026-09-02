@@ -104,8 +104,9 @@ export default function Home() {
                                 <i>comes alive.</i>
                             </h2>
                             <p className="mt-7 max-w-md text-sm leading-7 text-white/55">
-                                Bradford’s destination for music, nightlife, creativity and unforgettable experiences.
-                                Come for the moment. Stay for the feeling.
+                                Bradford's home for live music, late-night DJs and premium nightlife — with a recording
+                                studio and podcast space built for the city's next generation of talent. Come for the
+                                moment. Stay for the feeling.
                             </p>
                             <Link
                                 to="/about"
@@ -274,7 +275,7 @@ export default function Home() {
                 </section>
 
                 {/* Final CTA */}
-                <section className="px-5 py-24 lg:px-10 lg:py-36">
+                {/* <section className="px-5 py-24 lg:px-10 lg:py-36">
                     <div className="mx-auto max-w-[1400px] text-center">
                         <p className="mb-5 text-[10px] font-bold uppercase tracking-[.25em] text-[#c8a870]">
                             The next chapter
@@ -294,7 +295,7 @@ export default function Home() {
                             </Button>
                         </div>
                     </div>
-                </section>
+                </section> */}
             </main>
         </>
     );
