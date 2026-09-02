@@ -27,7 +27,7 @@ export default function Contact() {
                 description="Get in touch with Elevate Bradford — WhatsApp, phone, email, location and directions. We’re listening."
                 path="/contact"
             />
-            <PageHero
+            {/* <PageHero
                 eyebrow="Come find us"
                 title={
                     <>
@@ -39,11 +39,32 @@ export default function Contact() {
                 copy="Questions, bookings, big ideas or just want to say hello? We’re listening."
                 image={cocktailImage}
                 alt="Contact Elevate Bradford"
-            />
+            /> */}
 
             <section className="px-5 py-24 lg:px-10 lg:py-32">
                 <div className="mx-auto grid max-w-[1200px] gap-14 md:grid-cols-2">
                     <div>
+                        <SectionTitle eyebrow="Quick actions" title="What would you like to do?" />
+                        <div className="grid gap-3">
+                            <Button to="/vip" variant="primary" eventName="vip_booking_start">
+                                Book VIP
+                            </Button>
+                            <Button to="/private-events" variant="secondary" eventName="corporate_enquiry_start">
+                                Plan a private event
+                            </Button>
+                            <Button to="/studios" variant="secondary" eventName="cta_click">
+                                Book a studio
+                            </Button>
+                            <Link
+                                to="/contact/general"
+                                className="inline-flex items-center gap-4 px-6 py-4 text-[10px] font-bold uppercase tracking-[.18em] text-[#d8b982] transition hover:text-[#f1dbad]"
+                            >
+                                General enquiry <ArrowRight size={15} />
+                            </Link>
+                        </div>
+                    </div>
+
+                    {/* <div>
                         <SectionTitle eyebrow="Visit Elevate" title="Your next experience starts here." />
 
                         <div className="grid gap-7 text-sm text-white/65">
@@ -133,28 +154,7 @@ export default function Contact() {
                         >
                             Get directions <ArrowRight size={15} />
                         </a>
-                    </div>
-
-                    <div>
-                        <SectionTitle eyebrow="Quick actions" title="What would you like to do?" />
-                        <div className="grid gap-3">
-                            <Button to="/vip" variant="primary" eventName="vip_booking_start">
-                                Book VIP
-                            </Button>
-                            <Button to="/private-events" variant="secondary" eventName="corporate_enquiry_start">
-                                Plan a private event
-                            </Button>
-                            <Button to="/studios" variant="secondary" eventName="cta_click">
-                                Book a studio
-                            </Button>
-                            <Link
-                                to="/contact/general"
-                                className="inline-flex items-center gap-4 px-6 py-4 text-[10px] font-bold uppercase tracking-[.18em] text-[#d8b982] transition hover:text-[#f1dbad]"
-                            >
-                                General enquiry <ArrowRight size={15} />
-                            </Link>
-                        </div>
-                    </div>
+                    </div> */}
                 </div>
             </section>
 
@@ -163,7 +163,7 @@ export default function Contact() {
                 <div className="mx-auto max-w-[1100px]">
                     <div className="mb-10">
                         <SectionTitle
-                            eyebrow="General enquiry"
+                            eyebrow=""
                             title={
                                 <>
                                     Send us

@@ -217,8 +217,8 @@ export const eventFilters: ("All" | EventCategory)[] = [
     "Club Nights",
     "Live Music",
     "Special Events",
-    "Community",
-    "Private Events",
+    // "Community",
+    // "Private Events",
 ];
 
 export function getEventBySlug(slug: string): ElevateEvent | undefined {
