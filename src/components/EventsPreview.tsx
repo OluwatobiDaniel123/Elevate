@@ -33,9 +33,9 @@ export default function EventsPreview({events}: EventsPreviewProps) {
         <section className="px-5 py-24 lg:px-10 lg:py-32">
             <div className="mx-auto max-w-[1400px]">
                 <SectionTitle
-                    eyebrow="What’s happening"
+                    eyebrow=""
                     title="Make a date with Elevate"
-                    copy="The best nights are the ones you book before you know you need them."
+                    copy="Everyday at Elevate has its own vibe,the whole week packed to keep you entertained."
                 />
                 <div className="grid gap-4 md:grid-cols-3">
                     {events.map((event) => (
