@@ -69,7 +69,7 @@ export default function App() {
                 </Routes>
             </Suspense>
             <Footer />
-            <MobileBar />
+            {/* <MobileBar /> */}
             <CookieConsent />
         </BrowserRouter>
     );
