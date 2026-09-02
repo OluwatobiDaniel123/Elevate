@@ -4,6 +4,7 @@ import {Menu, X} from "lucide-react";
 import {track} from "@/lib/analytics";
 import BookNowModal from "@/components/BookNowModal";
 import logo from "../asessts/logo_2.jpeg";
+
 const links: [string, string][] = [
     ["/", "Home"],
     // ["/experiences", "Experiences"],
