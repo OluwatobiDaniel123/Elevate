@@ -43,12 +43,12 @@ export default function Navbar() {
                 </nav>
 
                 <div className="hidden items-center gap-5 lg:flex">
-                    <Link
+                    {/* <Link
                         to="/waitlist"
                         className="text-[10px] font-semibold uppercase tracking-[.18em] text-[#d8b982]"
                     >
                         VIP Waitlist
-                    </Link>
+                    </Link> */}
                     <button
                         onClick={() => {
                             track("book_now_click");
