@@ -225,17 +225,21 @@ export function getEventBySlug(slug: string): ElevateEvent | undefined {
     return events.find((event) => event.slug === slug);
 }
 
+// export function getRelatedEvents(slug: string, count = 3): ElevateEvent[] {
+//     const current = getEventBySlug(slug);
+//     if (!current) return events.slice(0, count);
+//     return events
+//     .filter((event) => event.slug !== slug && event.status !== "past")
+//     .sort((a, b) => {
+//         const sameCategoryA = a.category === current.category ? 0 : 1;
+//         const sameCategoryB = b.category === current.category ? 0 : 1;
+//         return sameCategoryA - sameCategoryB;
+//     })
+//     .slice(0, count);
+// }
+
 export function getRelatedEvents(slug: string, count = 3): ElevateEvent[] {
-    const current = getEventBySlug(slug);
-    if (!current) return events.slice(0, count);
-    return events
-    .filter((event) => event.slug !== slug && event.status !== "past")
-    .sort((a, b) => {
-        const sameCategoryA = a.category === current.category ? 0 : 1;
-        const sameCategoryB = b.category === current.category ? 0 : 1;
-        return sameCategoryA - sameCategoryB;
-    })
-    .slice(0, count);
+    return events.filter((event) => event.slug !== slug && event.status !== "past").slice(0, count);
 }
 
 // export function getFeaturedEvents(count = 3): ElevateEvent[] {
